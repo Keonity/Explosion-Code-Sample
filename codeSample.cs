@@ -91,7 +91,7 @@ public class StartExplosion : MonoBehaviour
                 newExplosion = Instantiate(newExplosion, new Vector3(transform.position.x + typeOfExplosion.spawnOffset.x, transform.position.y + typeOfExplosion.spawnOffset.y, transform.position.z), Quaternion.identity);
                 newExplosion.transform.parent = explosionManager.transform; // Creates the explosion as a child object of the explosion manager
 
-                // Sets explosion to first sprite and adds trail effect
+                // Sets explosion to first explosion sprite
                 newExplosion.AddComponent<SpriteRenderer>();
                 newExplosion.GetComponent<SpriteRenderer>().sprite = typeOfExplosion.explosionSprites[0];
 
