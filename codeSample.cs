@@ -94,8 +94,6 @@ public class StartExplosion : MonoBehaviour
                 // Sets explosion to first sprite and adds trail effect
                 newExplosion.AddComponent<SpriteRenderer>();
                 newExplosion.GetComponent<SpriteRenderer>().sprite = typeOfExplosion.explosionSprites[0];
-                newExplosion.AddComponent<TrailEffect>();
-                newExplosion.GetComponent<TrailEffect>().trailOpacity = 0.5f;
 
                 // Starts the explosion
                 StartCoroutine("ChangeExplosionSprite");
